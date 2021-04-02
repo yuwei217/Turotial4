@@ -6,3 +6,43 @@ output:
     bookdown::html_document2
 keed_md: true
 ---
+
+```{r global, include=FALSE}
+knitr::opts_chunk$set(fig.align ='center')
+```
+
+
+```{r , message=FALSE}
+library(tidyverse)
+```
+
+# Learning to reference figures {#figures}
+
+```{r FigRef, fig.cap="This is random noise."}
+x = seq(1:100)
+y = rnorm(100)
+dat = data.frame(x, y)
+ggplot(dat, aes(x = x, y = y)) + geom_line()
+```
+
+In Figure \@ref(fig:FigRef), we plot x versus y as line plot.
+
+# Learning to reference tables {#tables}
+
+```{r TabRef}
+knitr::kable(head(dat,n=5), caption= "This is the first 5 rows")
+
+```
+
+In Table \@ref(tab:TabRef), we show the first 5 rows of the data.
+
+# Conclusions
+
+In Section \@ref(figures), we learn how to reference figures. While in Section \@ref(tables), we learn how to reference tables.
+
+
+
+
+
+
+
