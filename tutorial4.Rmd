@@ -7,6 +7,7 @@ output:
 keed_md: true
 ---
 
+<<<<<<< HEAD
 ```{r global, include=FALSE}
 knitr::opts_chunk$set(fig.align ='center')
 ```
@@ -46,3 +47,5 @@ In Section \@ref(figures), we learn how to reference figures. While in Section \
 
 
 
+=======
+>>>>>>> Feature
