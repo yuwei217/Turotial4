@@ -5,3 +5,4 @@ In this tutorial we are learning to create and merge branches as well as includi
 We are going to create branches using the terminal
 
 This is a conflict!
+
